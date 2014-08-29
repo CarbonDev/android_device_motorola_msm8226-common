@@ -178,6 +178,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     power.msm8226
 
+#Prebuilt DSP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/DSP/DSPManager.apk:system/app/DSPManager.apk \
+    $(LOCAL_PATH)/prebuilts/DSP/libcyanogen-dsp.so:system/lib/soundfx/libcyanogen-dsp.so
+
 # QRNG
 PRODUCT_PACKAGES += \
     qrngd \
